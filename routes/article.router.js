@@ -3,9 +3,8 @@ module.exports = function (app) {
 
   app.get('/', articleController.edit_article);
 
-  app.get('/articles', function (req, res) {
-    res.send('/articles')
-  })
-  
+  app.get('/articles', articleController.list)
+
+
   app.post('/articles', articleController.create_article);
 }
