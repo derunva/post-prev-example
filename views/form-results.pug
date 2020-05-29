@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+  body
+    p Запис створено
+    h1=article.title
+    .content-text !{article.body}
+    include ../views-parts/footer-scripts-and-css.pug
